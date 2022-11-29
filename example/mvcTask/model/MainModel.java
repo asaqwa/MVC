@@ -8,17 +8,19 @@ public class MainModel implements Model {
     private UserService userService = new UserServiceImpl();
 
     @Override
+    public ModelData getModelData() {
+        return modelData;
+    }
+
+    @Override
     public void loadUsers() {
         modelData.setUsers(userService.getUsersBetweenLevels(1, 100));
+        modelData.setDisplayDeletedUserList(false);
     }
 
     @Override
     public void loadDeletedUsers() {
         modelData.setUsers(userService.getAllDeletedUsers());
-    }
-
-    @Override
-    public ModelData getModelData() {
-        return modelData;
+        modelData.setDisplayDeletedUserList(true);
     }
 }
