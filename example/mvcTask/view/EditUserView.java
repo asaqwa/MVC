@@ -6,7 +6,6 @@ import mvcTask.model.ModelData;
 public class EditUserView implements View {
     private Controller controller;
 
-
     @Override
     public void refresh(ModelData modelData) {
         StringBuilder toPrint = new StringBuilder("User to be edited:\n\t").

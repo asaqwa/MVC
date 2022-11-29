@@ -4,6 +4,7 @@ import mvcTask.controller.Controller;
 import mvcTask.model.FakeModel;
 import mvcTask.model.MainModel;
 import mvcTask.model.Model;
+import mvcTask.view.EditUserView;
 import mvcTask.view.UsersView;
 
 public class Solution {
@@ -17,6 +18,13 @@ public class Solution {
         controller.setUsersView(usersView);
 
         usersView.fireEventShowAllUsers();
+
+        EditUserView editUserView = new EditUserView();
+        editUserView.setController(controller);
+        controller.setEditUserView(editUserView);
+
+        usersView.fireEventOpenUserEditForm(126L);
+
         usersView.fireEventShowDeletedUsers();
     }
 }

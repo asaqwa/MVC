@@ -9,6 +9,11 @@ public class Controller {
     private UsersView usersView;
     private EditUserView editUserView;
 
+    public void onOpenUserEditForm(long userId) {
+        model.loadUserById(userId);
+        editUserView.refresh(model.getModelData());
+    }
+
     public void onShowAllUsers() {
         model.loadUsers();
         usersView.refresh(model.getModelData());

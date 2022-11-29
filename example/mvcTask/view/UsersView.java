@@ -7,6 +7,10 @@ import mvcTask.model.ModelData;
 public class UsersView implements View {
     private Controller controller;
 
+    public void fireEventOpenUserEditForm(long id) {
+        controller.onOpenUserEditForm(id);
+    }
+
     public void fireEventShowAllUsers() {
         controller.onShowAllUsers();
     }
