@@ -1,7 +1,7 @@
-package controller;
+package mvcTask.controller;
 
-import model.Model;
-import view.UsersView;
+import mvcTask.model.Model;
+import mvcTask.view.UsersView;
 
 public class Controller {
     private Model model;

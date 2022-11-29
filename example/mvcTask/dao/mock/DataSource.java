@@ -1,6 +1,6 @@
-package dao.mock;
+package mvcTask.dao.mock;
 
-import bean.User;
+import mvcTask.bean.User;
 
 import java.util.LinkedList;
 import java.util.List;

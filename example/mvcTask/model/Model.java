@@ -1,4 +1,4 @@
-package model;
+package mvcTask.model;
 
 public interface Model {
     ModelData getModelData();

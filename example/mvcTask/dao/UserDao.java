@@ -1,7 +1,7 @@
-package dao;
+package mvcTask.dao;
 
-import bean.User;
-import dao.mock.DataSource;
+import mvcTask.bean.User;
+import mvcTask.dao.mock.DataSource;
 
 import java.util.ArrayList;
 import java.util.List;

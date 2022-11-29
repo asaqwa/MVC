@@ -1,7 +1,9 @@
-import controller.Controller;
-import model.FakeModel;
-import model.Model;
-import view.UsersView;
+package mvcTask;
+
+import mvcTask.controller.Controller;
+import mvcTask.model.FakeModel;
+import mvcTask.model.Model;
+import mvcTask.view.UsersView;
 
 public class Solution {
     public static void main(String[] args) {

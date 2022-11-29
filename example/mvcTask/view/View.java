@@ -1,7 +1,7 @@
-package view;
+package mvcTask.view;
 
-import controller.Controller;
-import model.ModelData;
+import mvcTask.controller.Controller;
+import mvcTask.model.ModelData;
 
 public interface View {
     void refresh(ModelData modelData);

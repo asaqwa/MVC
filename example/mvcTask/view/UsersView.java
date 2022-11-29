@@ -1,8 +1,8 @@
-package view;
+package mvcTask.view;
 
-import bean.User;
-import controller.Controller;
-import model.ModelData;
+import mvcTask.bean.User;
+import mvcTask.controller.Controller;
+import mvcTask.model.ModelData;
 
 public class UsersView implements View {
     private Controller controller;

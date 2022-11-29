@@ -1,6 +1,6 @@
-package model;
+package mvcTask.model;
 
-import bean.User;
+import mvcTask.bean.User;
 
 import java.util.List;
 

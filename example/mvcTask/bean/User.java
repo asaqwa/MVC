@@ -1,4 +1,4 @@
-package bean;
+package mvcTask.bean;
 
 public class User implements Cloneable {
     private String name;
