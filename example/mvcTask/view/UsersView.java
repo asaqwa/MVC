@@ -11,6 +11,10 @@ public class UsersView implements View {
         controller.onShowAllUsers();
     }
 
+    public void fireEventShowDeletedUsers() {
+        controller.onShowAllDeletedUsers();
+    }
+
     @Override
     public void refresh(ModelData modelData) {
         StringBuilder toPrint = new StringBuilder("All users:\n");
@@ -25,4 +29,5 @@ public class UsersView implements View {
     public void setController(Controller controller) {
         this.controller = controller;
     }
+
 }

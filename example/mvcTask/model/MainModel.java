@@ -13,6 +13,11 @@ public class MainModel implements Model {
     }
 
     @Override
+    public void loadDeletedUsers() {
+        modelData.setUsers(userService.getAllDeletedUsers());
+    }
+
+    @Override
     public ModelData getModelData() {
         return modelData;
     }
