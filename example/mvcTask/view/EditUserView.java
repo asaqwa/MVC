@@ -6,6 +6,10 @@ import mvcTask.model.ModelData;
 public class EditUserView implements View {
     private Controller controller;
 
+    public void fireEventUserChanged(String name, long id, int level) {
+        controller.onUserChange(name, id, level);
+    }
+
     public void fireEventUserDeleted(long id) {
         controller.onUserDelete(id);
     }
