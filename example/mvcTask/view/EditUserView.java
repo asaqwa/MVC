@@ -6,11 +6,15 @@ import mvcTask.model.ModelData;
 public class EditUserView implements View {
     private Controller controller;
 
+    public void fireEventUserDeleted(long id) {
+        controller.onUserDelete(id);
+    }
+
     @Override
     public void refresh(ModelData modelData) {
         StringBuilder toPrint = new StringBuilder("User to be edited:\n\t").
                 append(modelData.getActiveUser()).
-                append("\n===================================================\n");
+                append("\n===================================================");
         System.out.println(toPrint);
 
     }

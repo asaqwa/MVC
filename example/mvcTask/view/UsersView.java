@@ -29,7 +29,7 @@ public class UsersView implements View {
         for (User user : modelData.getUsers()) {
             toPrint.append('\t').append(user).append('\n');
         }
-        toPrint.append("===================================================").append('\n');
+        toPrint.append("===================================================");
         System.out.println(toPrint);
     }
 
